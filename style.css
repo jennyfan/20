@@ -1,0 +1,410 @@
+/*
+Site: 20/20
+URI: http://jennyfan.com/20
+Author: Jenny Fan
+Author URI: http://jennyfan.com
+Version: 1.0
+Description: For use by 20/20 only. (c) 2012
+*/
+
+
+* {
+	margin: 0;
+	zoom: 1;
+}
+html, body {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: #fff;
+}
+body#index {
+  	background-color: #fff;
+  	background-size: cover;
+  	background-attachment: fixed;
+}
+article, div {
+  *zoom: 1;
+   display: block;
+   margin: 0 auto;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Elephant';
+    src: url('fonts/elephnt-webfont.eot');
+    src: url('fonts/elephnt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/elephnt-webfont.woff') format('woff'),
+         url('fonts/elephnt-webfont.ttf') format('truetype'),
+         url('fonts/elephnt-webfont.svg#elephantregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Elephant';
+    src: url('fonts/elephnti-webfont.eot');
+    src: url('fonts/elephnti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/elephnti-webfont.woff') format('woff'),
+         url('fonts/elephnti-webfont.ttf') format('truetype'),
+         url('fonts/elephnti-webfont.svg#elephantitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Leitura';
+    src: url('leitura_dr.otf');
+}
+
+
+/* Article Text */
+article h1 {
+	font-family: Georgia,serif;
+	font-size: 18pt;
+	line-height: 1.2em;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	margin: 10px 0;
+  letter-spacing: -0.02em;
+}
+article h2 {
+	font-family: Georgia, sans-serif;
+	font-size: 14pt;
+	font-style: italic;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	margin: 40px 0 20px;
+	line-height: 1.4em;
+}
+h3 {
+  font-family: 'PT Sans', Verdana, Arial, Tahoma, sans-serif;
+	font-size: 10pt;
+  color: #aaa;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	margin: 10px auto 0;
+}
+h4 {
+	font-family: Georgia, sans-serif;
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	float: right;
+}
+article p, article li {
+	font-family: 'PT Sans', Arial, Verdana, sans-serif;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	text-align: justify;
+	font-size: 90%;
+	line-height: 1.5em;
+}
+article p {
+	margin: 10px 0 20px;
+	text-indent: 2em;
+}
+article ul, ol {
+	margin: 10px 0 20px;
+}
+article li {
+	margin: 5px auto;
+	text-indent: 0em;
+}
+article a:link, article a:visited {
+	color: #c92323;
+	text-decoration: none;
+}
+article a:hover, article a:active {
+	color: #dd3737;
+	text-decoration: underline;
+}
+.quote {
+	position: relative;
+	bottom: 20px;
+	right: 5px;
+	color: #fff;
+	font-family: 'PT Sans', Arial, Verdana, sans-serif;
+	font-size: 75%;
+	text-align: right;
+}
+.quote a {
+	color: #fff;
+}
+
+
+blockquote {
+	font-family: Georgia, sans-serif;
+	font-size: 150%; /* 20pt */
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	margin: 40px 0 20px 0;
+	line-height: 1.5em;
+	width: 100%;
+	clear: both;
+}
+blockquote:before {
+	content:url('quote1.gif');
+}
+blockquote:after {
+	content:url('quote2.gif');
+}
+
+/* About Page Quotes */
+div#about blockquote {
+	color: #ccc;
+}
+div#about blockquote:before {
+	content:url('quote1.png');
+}
+div#about blockquote:after {
+	content:url('quote2.png');
+}
+
+
+/* Main Page */
+header#main {
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 100%;
+	min-height: 600px;
+}
+#maintext {
+	position: absolute;
+	top: 70%;
+	left: 5%;
+	right: 5%;
+}
+#maintext h1 {
+	font-family: 'Elephant',Georgia,serif;
+	font-size: 666%; /* 80pt */
+	font-style: italic;
+	font-weight: lighter;
+	color: #fff;
+	text-shadow: 1px 1px 10px #666;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+}
+#maintext h2 {
+	font-family: Georgia, sans-serif;
+	font-size: 150%; /* 18pt */
+	font-style: italic;
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+	color: #fff;
+	line-height: 1.5em;
+	text-shadow: 1px 1px 5px #666;
+	border-top: 4px solid #fff;
+	display: inline;
+}
+
+
+/* Menu Header */
+nav {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 0;
+	padding: 10px 30px 0 0;
+	z-index: 999;
+}
+nav ul, nav li {
+	list-style: none;
+	float: left;
+}
+nav a {
+	font-family: 'PT Sans', Verdana, Arial, Tahoma, sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	color: #ccc;
+	margin: 0 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+nav.dark a, p.dark {
+	color: #333;
+}
+nav a:hover, nav a:active {
+	color: #dd3737;
+	-o-transition: .5s ease;
+	-ms-transition: .5s ease;
+	-moz-transition: .5s ease;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+}
+@media screen and (max-width: 480px) {
+	nav, nav ul {
+		width: 100%;
+		padding: 10px 0;
+	}
+	nav li {
+		width: 50%;
+		text-align: center;
+	}
+}
+
+
+
+
+/*** ABOUT PAGE ***/
+div#about {
+	width: 75%;
+	padding: 15%;
+	background-color: #222;
+}
+@media screen and (max-width: 480px) {
+	div#about {
+		width: 90%;
+	}
+}
+div#about h1 {
+	font-family: 'Elephant',Georgia,serif;
+	font-size: 200%; /* 80pt */
+	font-style: italic;
+	font-weight: lighter;
+	color: #fff;
+	text-shadow: 1px 1px 10px #666;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	letter-spacing: 0.02em;
+}
+div#about p {
+	font-family: 'PT Sans', Georgia, Arial, Verdana, sans-serif;
+	font-weight: lighter;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	text-align: justify;
+	margin: 20px;
+	font-size: 95%;
+	line-height: 1.5em;
+}
+div#about p a:link, div#about p a:visited {
+	color: #ff6464;
+	text-decoration: none;
+}
+div#about p a:hover, div#about p a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+div#archive {
+   width: 100%; 
+   margin: 100px auto;
+   text-align: center;
+}
+div#archive ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	max-width: 780px;
+}
+div#archive li {
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+	height: 150px;
+	width: 150px;
+	opacity: 0.6;
+	filter:alpha(opacity=60); /* IE8 and earlier */
+}
+div#archive a img {
+	height: 150px;
+	width: 150px;
+	border: 0;
+	-webkit-filter: grayscale(100%);
+	  -webkit-transition: .5s ease-in-out;
+	  -moz-filter: grayscale(100%); 
+	  -moz-transition: .5s ease-in-out;
+	  -o-filter: grayscale(100%); 
+	  -o-transition: .5s ease-in-out;
+}
+div#archive a img:hover {
+	  -webkit-filter: grayscale(0%);
+	  -webkit-transition: .5s ease-in-out;
+	  -moz-filter: grayscale(0%); 
+	  -moz-transition: .5s ease-in-out;
+	  -o-filter: grayscale(0%); 
+	  -o-transition: .5s ease-in-out;
+}
+div#archive li:hover {
+	transition: .5s ease-in-out;
+	opacity: 1;
+	background-color: #4c4c4c;
+	filter:alpha(opacity=100); /* IE8 and earlier */
+}
+
+
+
+/*** Article Styling ***/
+section {	
+	   display: block;
+	   float: left;
+	}
+@media screen and (max-width: 800px) {
+	article#content {
+		width: 90%;
+   		margin: 40px 5%;
+	}
+	section.full {
+		width: 90%;
+		margin: 0;
+		padding: 20px 5%; 
+	}
+	#maintext h1 { font-size: 400%; }
+}
+@media screen and (min-width: 800px) {
+	article#content {
+	  *zoom: 1;
+	   width: 90%;
+   		margin: 40px 5%;
+	   clear: both;
+	   display: block;
+	}
+	section.full {
+    max-width: 600px;
+	  padding: 30px 0 20px 50px;
+	}
+}
+
+
+
+
+/*** Footer Styling ***/
+footer {
+	width: 100%;
+	float: center;
+	clear: both;
+	margin: 50px auto;
+}
+footer p {
+  font-family: 'PT Sans', Verdana, Arial, Tahoma, sans-serif;
+  font-size: 10pt;
+  color: #aaa;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+	padding: 20px 0 0 60px;
+	display: block;
+}
+footer a:link, footer a:visited {
+	color: #c92323;
+	text-decoration: none;
+}
+footer a:hover, footer a:active {
+	color: #dd3737;
+	text-decoration: underline;
+}
